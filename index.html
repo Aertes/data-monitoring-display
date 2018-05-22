@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link href="./css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="shape-loading"><img src="./images/Pacman-1s-200px.svg" alt="" width="200px"></div>
+
+<div class="main-wrap" id="mainWrap">
+    <div class="map-chart-wrap" id="MyChartMap"></div>
+
+    <div class="block-left-01">
+        <div class="block-left-title-wrap">
+            <div class="block-title">全网成交情况</div>
+        </div>
+        <div class="for-month">
+            <p>本月累计销售额：<span id="numAnimTarget6">0</span></p>
+            <div>
+                <svg class="con-svg" width="176" height="185" style="background: transparent;"
+                     data-spm-anchor-id="datav.10712494.0.i5.2fcf4a9aqWT3t9">
+                    <g class="con-g pie-chart-g" transform="translate(30,5)" id="arc">
+                        <g class="background" id="bg">
+                            <path class="bg-inner-circle" transform="translate(58, 87.5)"
+                                  d="M0,54A54,54 0 1,1 0,-54A54,54 0 1,1 0,54M0,51A51,51 0 1,0 0,-51A51,51 0 1,0 0,51Z"
+                                  style="fill: white;"></path>
+                            <path class="bg-upper-line" d="M84 42.46667900320919L67.33710984167995 71.32765135835893"
+                                  style="stroke: white;"></path>
+                            <path class="bg-lower-line"
+                                  d="M48.66289015832005 103.67234864164107L32.000000000000014 132.53332099679082"
+                                  style="stroke: white;"></path>
+                        </g>
+                        <g class="series">
+                            <g class="series-group" transform="translate(58,87.5)">
+                                <path class="serie serie1"
+                                      d="M3.5514757175273244e-15,-58A58,58 0 0,1 20.88018610325624,-54.11116177179515L19.800176477225744,-51.3123085767023A55,55 0 0,0 3.3677786976552213e-15,-55Z"
+                                      style="fill: rgb(68, 211, 226);"></path>
+                            </g>
+                            <g class="series-group" transform="translate(58,87.5)">
+                                <path class="serie serie1"
+                                      d="M20.88018610325624,-54.11116177179515A58,58 0 1,1 -1.0654427152581972e-14,-58L-1.0103336092965664e-14,-55A55,55 0 1,0 19.800176477225744,-51.3123085767023Z"
+                                      style="fill: rgba(1, 1, 1, 0);"></path>
+                            </g>
+                        </g>
+                        <text class="serie-label" x="58" y="87.5" dy=".35em"
+                              style="text-anchor: middle; font-size: 26.4093px; fill: white;"
+                              data-spm-anchor-id="datav.10712494.0.i6.2fcf4a9aqWT3t9">5.9%
+                        </text>
+                    </g>
+                </svg>
+            </div>
+            <p>本月销售目标：<span id="numAnimTarget7">0</span></p>
+        </div>
+        <div class="for-year">
+            <p class="color-01">今年累计支付金额 <span id="numAnimTarget3">0</span></p>
+            <svg class="con-svg" width="400" height="192" style="background: transparent;">
+                <g class="con-g line2-chart-g" transform="translate(55,20)">
+                    <g class="axis axis1" transform="translate(0,140)" id="xaxis" style="display: block;">
+                        <g class="tick" transform="translate(8,0)" style="opacity: 1;">
+                            <line y2="0" x2="0" style="display: block; stroke: rgb(255, 255, 255);"></line>
+                            <text dy=".71em" y="12" x="0"
+                                  style="text-anchor: middle; fill: rgb(255, 255, 255); font-size: 12px;">内蒙古
+                            </text>
+                        </g>
+                        <g class="tick" transform="translate(48,0)" style="opacity: 1;">
+                            <line y2="0" x2="0" style="display: block; stroke: rgb(255, 255, 255);"></line>
+                            <text dy=".71em" y="12" x="0"
+                                  style="text-anchor: middle; fill: rgb(255, 255, 255); font-size: 12px;">黑龙江
+                            </text>
+                        </g>
+                        <g class="tick" transform="translate(88,0)" style="opacity: 1;">
+                            <line y2="0" x2="0" style="display: block; stroke: rgb(255, 255, 255);"></line>
+                            <text dy=".71em" y="12" x="0"
+                                  style="text-anchor: middle; fill: rgb(255, 255, 255); font-size: 12px;">辽宁
+                            </text>
+                        </g>
+                        <g class="tick" transform="translate(128,0)" style="opacity: 1;">
+                            <line y2="0" x2="0" style="display: block; stroke: rgb(255, 255, 255);"></line>
+                            <text dy=".71em" y="12" x="0"
+                                  style="text-anchor: middle; fill: rgb(255, 255, 255); font-size: 12px;">吉林
+                            </text>
+                        </g>
+                        <g class="tick" transform="translate(168,0)" style="opacity: 1;">
+                            <line y2="0" x2="0" style="display: block; stroke: rgb(255, 255, 255);"></line>
+                            <text dy=".71em" y="12" x="0"
+                                  style="text-anchor: middle; fill: rgb(255, 255, 255); font-size: 12px;">江苏
+                            </text>
+                        </g>
+                        <g class="tick" transform="translate(208,0)" style="opacity: 1;">
+                            <line y2="0" x2="0" style="display: block; stroke: rgb(255, 255, 255);"></line>
+                            <text dy=".71em" y="12" x="0"
+                                  style="text-anchor: middle; fill: rgb(255, 255, 255); font-size: 12px;">安徽
+                            </text>
+                        </g>
+                        <g class="tick" transform="translate(248,0)" style="opacity: 1;">
+                            <line y2="0" x2="0" style="display: block; stroke: rgb(255, 255, 255);"></line>
+                            <text dy=".71em" y="12" x="0"
+                                  style="text-anchor: middle; fill: rgb(255, 255, 255); font-size: 12px;">浙江
+                            </text>
+                        </g>
+                        <g class="tick" transform="translate(288,0)" style="opacity: 1;">
+                            <line y2="0" x2="0" style="display: block; stroke: rgb(255, 255, 255);"></line>
+                            <text dy=".71em" y="12" x="0"
+                                  style="text-anchor: middle; fill: rgb(255, 255, 255); font-size: 12px;">福建
+                            </text>
+                        </g>
+                        <path class="domain" d="M0,0V0H296V0"
+                              style="display: none; fill: none; stroke: rgb(255, 255, 255);"></path>
+                    </g>
+                    <g class="axis axis2" id="yaxis" style="display: block;">
+                        <g class="tick" transform="translate(0,107.58620689655173)" style="opacity: 1;">
+                            <line x2="0" y2="0" style="display: block; stroke: rgb(255, 255, 255);"></line>
+                            <text dy=".32em" x="-8" y="0"
+                                  style="text-anchor: end; fill: rgb(255, 255, 255); font-size: 12px;">1,200
+                            </text>
+                        </g>
+                        <g class="tick" transform="translate(0,80)" style="opacity: 1;">
+                            <line x2="0" y2="0" style="display: block; stroke: rgb(255, 255, 255);"></line>
+                            <text dy=".32em" x="-8" y="0"
+                                  style="text-anchor: end; fill: rgb(255, 255, 255); font-size: 12px;">1,400
+                            </text>
+                        </g>
+                        <g class="tick" transform="translate(0,52.41379310344828)" style="opacity: 1;">
+                            <line x2="0" y2="0" style="display: block; stroke: rgb(255, 255, 255);"></line>
+                            <text dy=".32em" x="-8" y="0"
+                                  style="text-anchor: end; fill: rgb(255, 255, 255); font-size: 12px;">1,600
+                            </text>
+                        </g>
+                        <g class="tick" transform="translate(0,24.827586206896548)" style="opacity: 1;">
+                            <line x2="0" y2="0" style="display: block; stroke: rgb(255, 255, 255);"></line>
+                            <text dy=".32em" x="-8" y="0"
+                                  style="text-anchor: end; fill: rgb(255, 255, 255); font-size: 12px;">1,800
+                            </text>
+                        </g>
+                        <path class="domain" d="M0,0H0V132H0"
+                              style="display: none; fill: none; stroke: rgb(255, 255, 255);"></path>
+                    </g>
+                    <g class="axis axis3" transform="translate(296, 0)" id="zaxis" style="display: block;">
+                        <g class="tick" transform="translate(0,106.85714285714286)" style="opacity: 1;">
+                            <line x2="0" y2="0" style="display: block; stroke: rgb(255, 255, 255);"></line>
+                            <text dy=".32em" x="8" y="0"
+                                  style="text-anchor: start; fill: rgb(255, 255, 255); font-size: 12px;">20
+                            </text>
+                        </g>
+                        <g class="tick" transform="translate(0,75.42857142857143)" style="opacity: 1;">
+                            <line x2="0" y2="0" style="display: block; stroke: rgb(255, 255, 255);"></line>
+                            <text dy=".32em" x="8" y="0"
+                                  style="text-anchor: start; fill: rgb(255, 255, 255); font-size: 12px;">30
+                            </text>
+                        </g>
+                        <g class="tick" transform="translate(0,44.00000000000001)" style="opacity: 1;">
+                            <line x2="0" y2="0" style="display: block; stroke: rgb(255, 255, 255);"></line>
+                            <text dy=".32em" x="8" y="0"
+                                  style="text-anchor: start; fill: rgb(255, 255, 255); font-size: 12px;">40
+                            </text>
+                        </g>
+                        <g class="tick" transform="translate(0,12.571428571428571)" style="opacity: 1;">
+                            <line x2="0" y2="0" style="display: block; stroke: rgb(255, 255, 255);"></line>
+                            <text dy=".32em" x="8" y="0"
+                                  style="text-anchor: start; fill: rgb(255, 255, 255); font-size: 12px;">50
+                            </text>
+                        </g>
+                        <path class="domain" d="M0,0H0V132H0"
+                              style="display: none; fill: none; stroke: rgb(255, 255, 255);"></path>
+                    </g>
+                    <g class="series2" style="display: none;">
+                        <path class="serie serie1"
+                              d="M8,100.57142857142857L48,69.14285714285715L88,132L128,66L168,103.71428571428571L208,0L248,34.57142857142857L288,100.57142857142857L288,132L248,132L208,132L168,132L128,132L88,132L48,132L8,132Z"
+                              style="fill: url(&quot;#linearsaui6xeja3d&quot;);"></path>
+                    </g>
+                    <g class="series" style="display: block;">
+                        <path class="serie serie1"
+                              d="M8,107.58620689655173L48,119.86206896551724L88,113.6551724137931L128,13.931034482758625L168,132L208,0L248,129.24137931034483L288,103.17241379310344L288,132L248,132L208,132L168,132L128,132L88,132L48,132L8,132Z"
+                              style="fill: url(&quot;#linearhwdryfjcxyr&quot;); stroke: none;"></path>
+                    </g>
+                    <defs>
+                        <linearGradient id="linearhwdryfjcxyr" x1="0%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" style="stop-color:rgba(27, 181, 255, 0.8);        stop-opacity:1"></stop>
+                            <stop offset="100%" style="stop-color:rgba(255,255,255, .01);        stop-opacity:1"></stop>
+                        </linearGradient>
+                    </defs>
+                    <defs>
+                        <linearGradient id="linearsaui6xeja3d" x1="0%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" style="stop-color:rgba(95, 255, 253, 0.8);        stop-opacity:1"></stop>
+                            <stop offset="100%" style="stop-color:rgba(255,255,255, .01);        stop-opacity:1"></stop>
+                        </linearGradient>
+                    </defs>
+                    <g class="line-g">
+                        <path class="serie serie1"
+                              d="M8,107.58620689655173L48,119.86206896551724L88,113.6551724137931L128,13.931034482758625L168,132L208,0L248,129.24137931034483L288,103.17241379310344"
+                              style="fill: none; stroke: rgb(27, 181, 255); stroke-width: 1;"></path>
+                    </g>
+                    <g class="scatterplot-g" style="display: block;">
+                        <g class="series-group">
+                            <g class="serie serie1" transform="translate(8, 107.58620689655173)">
+                                <circle class="back" r="10" style="fill: none; stroke: rgb(27, 181, 255);"></circle>
+                                <circle class="front" r="6" style="fill: rgb(27, 181, 255);"></circle>
+                            </g>
+                        </g>
+                        <g class="series-group">
+                            <g class="serie serie1" transform="translate(48, 119.86206896551724)">
+                                <circle class="back" r="10" style="fill: none; stroke: rgb(27, 181, 255);"></circle>
+                                <circle class="front" r="6" style="fill: rgb(27, 181, 255);"></circle>
+                            </g>
+                        </g>
+                        <g class="series-group">
+                            <g class="serie serie1" transform="translate(88, 113.6551724137931)">
+                                <circle class="back" r="10" style="fill: none; stroke: rgb(27, 181, 255);"></circle>
+                                <circle class="front" r="6" style="fill: rgb(27, 181, 255);"></circle>
+                            </g>
+                        </g>
+                        <g class="series-group">
+                            <g class="serie serie1" transform="translate(128, 13.931034482758625)">
+                                <circle class="back" r="10" style="fill: none; stroke: rgb(27, 181, 255);"></circle>
+                                <circle class="front" r="6" style="fill: rgb(27, 181, 255);"></circle>
+                            </g>
+                        </g>
+                        <g class="series-group">
+                            <g class="serie serie1" transform="translate(168, 132)">
+                                <circle class="back" r="10" style="fill: none; stroke: rgb(27, 181, 255);"></circle>
+                                <circle class="front" r="6" style="fill: rgb(27, 181, 255);"></circle>
+                            </g>
+                        </g>
+                        <g class="series-group">
+                            <g class="serie serie1" transform="translate(208, 0)">
+                                <circle class="back" r="10" style="fill: none; stroke: rgb(27, 181, 255);"></circle>
+                                <circle class="front" r="6" style="fill: rgb(27, 181, 255);"></circle>
+                            </g>
+                        </g>
+                        <g class="series-group">
+                            <g class="serie serie1" transform="translate(248, 129.24137931034483)">
+                                <circle class="back" r="10" style="fill: none; stroke: rgb(27, 181, 255);"></circle>
+                                <circle class="front" r="6" style="fill: rgb(27, 181, 255);"></circle>
+                            </g>
+                        </g>
+                        <g class="series-group">
+                            <g class="serie serie1" transform="translate(288, 103.17241379310344)">
+                                <circle class="back" r="10" style="fill: none; stroke: rgb(27, 181, 255);"></circle>
+                                <circle class="front" r="6" style="fill: rgb(27, 181, 255);"></circle>
+                            </g>
+                        </g>
+                    </g>
+                    <g class="line2-g">
+                        <path class="line"
+                              d="M8,100.57142857142857L48,69.14285714285715L88,132L128,66L168,103.71428571428571L208,0L248,34.57142857142857L288,100.57142857142857"
+                              style="fill: none; stroke: rgb(95, 255, 253); stroke-width: 1;"></path>
+                    </g>
+                    <g class="scatterplot2-g" style="display: block;">
+                        <g class="series-group">
+                            <g class="serie serie1" transform="translate(8, 100.57142857142857)">
+                                <circle class="back" r="10" style="fill: none; stroke: rgb(95, 255, 253);"></circle>
+                                <circle class="front" r="6" style="fill: rgb(95, 255, 253);"></circle>
+                            </g>
+                        </g>
+                        <g class="series-group">
+                            <g class="serie serie1" transform="translate(48, 69.14285714285715)">
+                                <circle class="back" r="10" style="fill: none; stroke: rgb(95, 255, 253);"></circle>
+                                <circle class="front" r="6" style="fill: rgb(95, 255, 253);"></circle>
+                            </g>
+                        </g>
+                        <g class="series-group">
+                            <g class="serie serie1" transform="translate(88, 132)">
+                                <circle class="back" r="10" style="fill: none; stroke: rgb(95, 255, 253);"></circle>
+                                <circle class="front" r="6" style="fill: rgb(95, 255, 253);"></circle>
+                            </g>
+                        </g>
+                        <g class="series-group">
+                            <g class="serie serie1" transform="translate(128, 66)">
+                                <circle class="back" r="10" style="fill: none; stroke: rgb(95, 255, 253);"></circle>
+                                <circle class="front" r="6" style="fill: rgb(95, 255, 253);"></circle>
+                            </g>
+                        </g>
+                        <g class="series-group">
+                            <g class="serie serie1" transform="translate(168, 103.71428571428571)">
+                                <circle class="back" r="10" style="fill: none; stroke: rgb(95, 255, 253);"></circle>
+                                <circle class="front" r="6" style="fill: rgb(95, 255, 253);"></circle>
+                            </g>
+                        </g>
+                        <g class="series-group">
+                            <g class="serie serie1" transform="translate(208, 0)">
+                                <circle class="back" r="10" style="fill: none; stroke: rgb(95, 255, 253);"></circle>
+                                <circle class="front" r="6" style="fill: rgb(95, 255, 253);"></circle>
+                            </g>
+                        </g>
+                        <g class="series-group">
+                            <g class="serie serie1" transform="translate(248, 34.57142857142857)">
+                                <circle class="back" r="10" style="fill: none; stroke: rgb(95, 255, 253);"></circle>
+                                <circle class="front" r="6" style="fill: rgb(95, 255, 253);"></circle>
+                            </g>
+                        </g>
+                        <g class="series-group">
+                            <g class="serie serie1" transform="translate(288, 100.57142857142857)">
+                                <circle class="back" r="10" style="fill: none; stroke: rgb(95, 255, 253);"></circle>
+                                <circle class="front" r="6" style="fill: rgb(95, 255, 253);"></circle>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+        </div>
+    </div>
+
+    <div class="block-left-02">
+        <div class="block-left-title-wrap">
+            <div class="block-title">成交用户分析</div>
+        </div>
+        <div class="for-user">
+            <p class="color-02">PC端：<span id="numAnimTarget4">0</span></p>
+            <div>
+                <svg class="con-svg" width="200" height="140" style="background: rgba(1, 1, 1, 0);margin: 10px 0">
+                    <g class="con-g pie-chart-g" transform="translate(30,10)" id="arc">
+                        <g class="series">
+                            <g class="series-group" transform="translate(70,60)">
+                                <path class="serie serie1"
+                                      d="M-56.82919844483522,-20.4597703828156A60.400000000000006,60.400000000000006 0 0,1 56.82919844483522,-20.459770382815606L0,0Z"
+                                      style="fill: rgba(1, 1, 1, 0);"
+                                      data-spm-anchor-id="datav.10712494.0.i0.2fcf4a9aTgNpoY"></path>
+                                <text class="serie-label" transform="translate(1.8492166667125033e-15,-30.200000000000003)"
+                                      dy=".35em"
+                                      style="text-anchor: middle; fill: rgb(255, 255, 255); font-size: 20.5882px;"> 39.0%
+                                </text>
+                            </g>
+                            <g class="series-group" transform="translate(70,60)">
+                                <path class="serie serie1"
+                                      d="M56.82919844483522,-20.459770382815606A60.400000000000006,60.400000000000006 0 1,1 -56.82919844483523,-20.459770382815584L0,0Z"
+                                      style="fill: rgb(77, 211, 226);"></path>
+                                <text class="serie-label" transform="translate(1.8492166667125033e-15,30.200000000000003)"
+                                      dy=".35em"
+                                      style="text-anchor: middle; fill: rgb(255, 255, 255); font-size: 20.5882px;"> 61.0%
+                                </text>
+                            </g>
+                        </g>
+                        <circle class="bg-inner-circle" r="6" cx="70" cy="60" style="fill: rgb(255, 255, 255);"></circle>
+                        <circle class="bg-outer-circle" cx="70" cy="60" r="60.400000000000006"
+                                style="fill: none; stroke-width: 2px; stroke: rgb(255, 255, 255);"></circle>
+                    </g>
+                </svg>
+            </div>
+            <p class="color-02">无线端：<span id="numAnimTarget5">0</span></p>
+        </div>
+        <div class="for-vip">
+            <svg class="con-svg" width="224" height="232" style="background: transparent;">
+                <g class="con-g pie-chart-g" transform="translate(30,30)" id="arc">
+                    <g class="background" id="bg" style="display: none;">
+                        <circle class="bg-outer-circle" cx="82" cy="86" r="75.92"
+                                style="stroke: rgb(255, 255, 255); fill: none;"></circle>
+                        <circle class="bg-inner-circle" cx="82" cy="86" r="71.92"
+                                style="stroke: rgb(255, 255, 255); fill: none;"></circle>
+                    </g>
+                    <g class="series">
+                        <g class="series-group" transform="translate(82,86)">
+                            <path class="serie serie1"
+                                  d="M4.526294569648617e-15,-73.92A73.92,73.92 0 1,1 -68.72907783685953,-27.211766934451422L-48.11035448580167,-19.048236854115995A51.744,51.744 0 1,0 3.168406198754032e-15,-51.744Z"
+                                  style="fill: rgb(77, 211, 226);"
+                                  data-spm-anchor-id="datav.10712494.0.i1.2fcf4a9aTgNpoY"></path>
+                            <text class="serie-label" transform="translate(44.8, 46.31651215937546)" dy=".35em"
+                                  style="text-anchor: start; fill: rgb(255, 255, 255); stroke: none;">
+                                <tspan class="label-value" dy="-3" x="0" style="font-size: 15px; fill: #fff">81%</tspan>
+                                <tspan class="label-content" x="0" dy="15" style="font-size: 15px; fill: #FFFFFF">新会员
+                                </tspan>
+                            </text>
+                            <path class="serie-cord"
+                                  d="M41.54920329082949 61.13779605037562L31.47666915971931 46.31651215937546L44.8 46.31651215937546"
+                                  style="fill: none; stroke: rgb(255, 255, 255); display: none;"></path>
+                        </g>
+                        <g class="series-group" transform="translate(82,86)">
+                            <path class="serie serie1"
+                                  d="M-65.29262394501656,-25.85117858772885A70.224,70.224 0 0,1 4.947150182152303e-14,-70.224L3.905644880646555e-14,-55.44A55.44,55.44 0 0,0 -51.546808377644645,-20.408825200838564Z"
+                                  style="fill: rgb(255, 255, 255);"></path>
+                            <text class="serie-label" transform="translate(-44.8, -46.31651215937548)" dy=".35em"
+                                  style="text-anchor: end; fill: rgb(255, 255, 255); stroke: none;">
+                                <tspan class="label-value" dy="-3" x="0" style="font-size: 15px; fill: #fff">19%</tspan>
+                                <tspan class="label-content" x="0" dy="15" style="font-size: 15px; fill: #fff">老会员</tspan>
+                            </text>
+                            <path class="serie-cord"
+                                  d="M-41.54920329082946 -61.13779605037563L-31.47666915971929 -46.31651215937548L-44.8 -46.31651215937548"
+                                  style="fill: none; stroke: rgb(255, 255, 255); display: none;"></path>
+                        </g>
+                    </g>
+                    <image class="img" xmlns:xlink="http://www.w3.org/1999/xlink"
+                           xlink:href="//datav.oss-cn-hangzhou.aliyuncs.com/uploads/images/e44066b3c8d5f1c419a6baf756776d5b.png"
+                           x="68.88" y="72.88" width="26.240000000000002" height="26.240000000000002"></image>
+                </g>
+            </svg>
+        </div>
+        <div class="for-style clearfix">
+            <p>家有宝宝</p>
+            <p>时尚达人</p>
+            <p>美食专家</p>
+            <p>运动先锋</p>
+            <p>VIP4</p>
+        </div>
+    </div>
+
+    <div class="block-left-03">
+        <div class="block-left-title-wrap">
+            <div class="block-title">渠道销售排行</div>
+        </div>
+        <div class="for-chart">
+            <svg class="con-svg" width="280" height="250" data-spm-anchor-id="datav.10712494.0.i5.2fcf4a9aW1b9EE"
+                 style="background: transparent;">
+                <g class="con-g pie-chart-g" transform="translate(50,5)" id="arc">
+                    <g class="background" id="bg">
+                        <circle class="bg-outer-circle" cx="94" cy="114" r="68.47376443537345" style="stroke: rgb(255, 255, 255); fill: none;"></circle>
+                        <circle class="bg-inner-circle" cx="94" cy="114" r="64.47376443537345" style="stroke: rgb(255, 255, 255); fill: none;"></circle>
+                    </g>
+                    <g class="series">
+                        <g class="series-group" transform="translate(94,114)">
+                            <path class="serie serie1" d="M4.070344142152763e-15,-66.47376443537345A66.47376443537345,66.47376443537345 0 0,1 54.706835635527895,37.76140215824692L49.236152071975106,33.985261942422234A59.82638799183611,59.82638799183611 0 0,0 3.663309727937487e-15,-59.82638799183611Z" style="fill: rgb(35, 83, 155);"></path>
+                            <text class="serie-label" transform="translate(78.49432893483174, -37.24785975384907)" dy=".35em" style="text-anchor: start; fill: rgb(255, 255, 255); stroke: none;">
+                                <tspan dy="-3" x="0" style="font-size: 15px">34.62%</tspan>
+                                <tspan x="0" dy="15" style="font-size: 15px">天猫</tspan>
+                            </text>
+                            <path class="serie-cord" d="M58.859595267153466 -30.891898666097006L70.96986732270173 -37.24785975384907L78.49432893483174 -37.24785975384907" style="fill: none; stroke: rgb(255, 255, 255);"></path>
+                        </g>
+                        <g class="series-group" transform="translate(94,114)">
+                            <path class="serie serie1" d="M49.236152071975106,33.985261942422234A59.82638799183611,59.82638799183611 0 0,1 -43.14693743545279,41.443195944459134L0,0Z" style="fill: rgb(223, 223, 223);"></path>
+                            <text class="serie-label" transform="translate(78.49432893483174, 79.89073636833945)" dy=".35em" style="text-anchor: start; fill: rgb(255, 255, 255); stroke: none;">
+                                <tspan dy="-3" x="0" style="font-size: 15px">28.21%</tspan>
+                                <tspan x="0" dy="15" style="font-size: 15px">淘宝</tspan>
+                            </text>
+                            <path class="serie-cord" d="M5.3489157337984405 66.25821050015043L6.44944699712945 79.89073636833945L78.49432893483174 79.89073636833945" style="fill: none; stroke: rgb(255, 255, 255);"></path>
+                        </g>
+                        <g class="series-group" transform="translate(94,114)">
+                            <path class="serie serie1" d="M-46.02339993114965,44.20607567408974A63.81481385795851,63.81481385795851 0 0,1 -62.52515807984511,12.76460241512729L0,0Z" style="fill: rgb(68, 211, 228);"></path>
+                            <text class="serie-label" transform="translate(-78.49432893483174, 37.24785975384907)" dy=".35em" style="text-anchor: end; fill: rgb(255, 255, 255); stroke: none;">
+                                <tspan dy="-3" x="0" style="font-size: 15px">8.97%</tspan>
+                                <tspan x="0" dy="15" style="font-size: 15px">京东</tspan>
+                            </text>
+                            <path class="serie-cord" d="M-58.85959526715348 30.89189866609699L-70.96986732270173 37.24785975384907L-78.49432893483174 37.24785975384907" style="fill: none; stroke: rgb(255, 255, 255);"></path>
+                        </g>
+                        <g class="series-group" transform="translate(94,114)">
+                            <path class="serie serie1" d="M-58.61733569985479,11.966814764181835A59.82638799183611,59.82638799183611 0 0,1 -1.098992918381246e-14,-59.82638799183611L0,0Z" data-spm-anchor-id="datav.10712494.0.i6.2fcf4a9aW1b9EE" style="fill: rgb(105, 145, 143);"></path>
+                            <text class="serie-label" transform="translate(-78.49432893483174, -50.69090174381997)" dy=".35em" style="text-anchor: end; fill: rgb(255, 255, 255); stroke: none;">
+                                <tspan dy="-3" x="0" style="font-size: 15px">28.21%</tspan>
+                                <tspan x="0" dy="15" style="font-size: 15px" data-spm-anchor-id="datav.10712494.0.i4.2fcf4a9aW1b9EE">官网
+                                </tspan>
+                            </text>
+                            <path class="serie-cord" d="M-51.490907763002944 -42.04102491556841L-62.08508359052669 -50.69090174381997L-78.49432893483174 -50.69090174381997" style="fill: none; stroke: rgb(255, 255, 255);"></path>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+        </div>
+        <div class="for-list">
+            <p class="clearfix">
+                <span class="s1">渠道</span>
+                <span class="s2">金额</span>
+                <span class="s3">占比</span>
+            </p>
+            <div class="scrollDiv1">
+                <ul>
+                    <li class="clearfix">
+                        <span class="ball">1</span>
+                        <span class="s1">淘宝</span>
+                        <span class="s2">6646546</span>
+                        <span class="s3">28.21%</span>
+                    </li>
+                    <li class="clearfix">
+                        <span class="ball">2</span>
+                        <span class="s1">天猫</span>
+                        <span class="s2">13423688</span>
+                        <span class="s3">34.62%</span>
+                    </li>
+                    <li class="clearfix">
+                        <span class="ball">3</span>
+                        <span class="s1">官网</span>
+                        <span class="s2">6646546</span>
+                        <span class="s3">28.21%</span>
+                    </li>
+                    <li class="clearfix">
+                        <span class="ball">4</span>
+                        <span class="s1">京东</span>
+                        <span class="s2">587358</span>
+                        <span class="s3">8.97%</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="block-right-01">
+        <div>
+            <span class="color-01 f25">今日支付金额：</span>
+            <span class="color-03 f20" id="clock"></span>
+        </div>
+        <div class="count-wrap"> <!--453256823-->
+            <span class="prefix" style="display: none">0</span>
+            <span class="unit">元</span>
+        </div>
+        <div class="f20">
+            <span class="color-02">昨日支付金额</span>
+            <span class="color-02" id="numAnimTarget">0</span>
+            <span class="color-01">环比增长</span>
+            <span class="color-01"><span id="numAnimTarget2">0</span>%</span>
+        </div>
+    </div>
+
+    <div class="block-right-02">
+        <div class="block-right-title-wrap">
+            <div class="block-title">热销商品与店铺排行</div>
+        </div>
+        <div class="cont clearfix">
+            <div class="hot-sales">
+                <p class="hot-sales-title clearfix">
+                    <span>商品名</span>
+                    <span>金额</span>
+                </p>
+                <div class="scrollDiv2">
+                    <ul class="hot-sales-list">
+                        <li class="clearfix">
+                            <span class="ball">1</span>
+                            <span class="title-cont">甘肃黄元帅 香蕉苹果</span>
+                            <span class="Amount">1032688</span>
+                        </li>
+                        <li class="clearfix">
+                            <span class="ball">2</span>
+                            <span class="title-cont">小松韩代adidas三X草</span>
+                            <span class="Amount">478688</span>
+                        </li>
+                        <li class="clearfix">
+                            <span class="ball">3</span>
+                            <span class="title-cont">Adidas Duramo Slide 黑白明星情侣款</span>
+                            <span class="Amount">106745</span>
+                        </li>
+                        <li class="clearfix">
+                            <span class="ball">4</span>
+                            <span class="title-cont">顺丰送背包/垫 赛睿Sensei Wireless</span>
+                            <span class="Amount">800641</span>
+                        </li>
+                        <li class="clearfix">
+                            <span class="ball">5</span>
+                            <span class="title-cont">RGB灯效 包顺丰送礼 无线激光鼠标</span>
+                            <span class="Amount">646344</span>
+                        </li>
+                        <li class="clearfix">
+                            <span class="ball">6</span>
+                            <span class="title-cont">模拟人生4激光有线 游戏鼠标</span>
+                            <span class="Amount">364353</span>
+                        </li>
+                        <li class="clearfix">
+                            <span class="ball">7</span>
+                            <span class="title-cont">小型桌面键盘清洁器</span>
+                            <span class="Amount">45324</span>
+                        </li>
+                        <li class="clearfix">
+                            <span class="ball">8</span>
+                            <span class="title-cont">键盘微型吸尘器清洁大功率强力</span>
+                            <span class="Amount">6343</span>
+                        </li>
+                        <li class="clearfix">
+                            <span class="ball">9</span>
+                            <span class="title-cont">2016夏梅花印花修身露肩吊</span>
+                            <span class="Amount">1534688</span>
+                        </li>
+                        <li class="clearfix">
+                            <span class="ball">10</span>
+                            <span class="title-cont">包邮广东高州香蕉</span>
+                            <span class="Amount">1032688</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="hot-sales">
+                <p class="hot-sales-title clearfix">
+                    <span>店铺</span>
+                    <span>金额</span>
+                </p>
+                <div class="scrollDiv3">
+                    <ul class="hot-sales-list">
+                        <li class="clearfix">
+                            <span class="ball">1</span>
+                            <span class="title-cont">网聚宝电器商城</span>
+                            <span class="Amount">1372688</span>
+                        </li>
+                        <li class="clearfix">
+                            <span class="ball">2</span>
+                            <span class="title-cont">网聚宝.cn</span>
+                            <span class="Amount">1876688</span>
+                        </li>
+                        <li class="clearfix">
+                            <span class="ball">3</span>
+                            <span class="title-cont">网聚宝男装专营店</span>
+                            <span class="Amount">436288</span>
+                        </li>
+                        <li class="clearfix">
+                            <span class="ball">4</span>
+                            <span class="title-cont">网聚宝直营店</span>
+                            <span class="Amount">137240</span>
+                        </li>
+                        <li class="clearfix">
+                            <span class="ball">5</span>
+                            <span class="title-cont">网聚宝男装专营店</span>
+                            <span class="Amount">106745</span>
+                        </li>
+                        <li class="clearfix">
+                            <span class="ball">1</span>
+                            <span class="title-cont">网聚宝电器黑店</span>
+                            <span class="Amount">800641</span>
+                        </li>
+                        <li class="clearfix">
+                            <span class="ball">2</span>
+                            <span class="title-cont">网聚宝.cn</span>
+                            <span class="Amount">137240</span>
+                        </li>
+                        <li class="clearfix">
+                            <span class="ball">3</span>
+                            <span class="title-cont">网聚宝男装专营店</span>
+                            <span class="Amount">436288</span>
+                        </li>
+                        <li class="clearfix">
+                            <span class="ball">4</span>
+                            <span class="title-cont">网聚宝直营店</span>
+                            <span class="Amount">800641</span>
+                        </li>
+                        <li class="clearfix">
+                            <span class="ball">5</span>
+                            <span class="title-cont">网聚宝男装专营店</span>
+                            <span class="Amount">1876688</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+<script src="./js/jquery-3.3.1.min.js"></script>
+<script src="./js/echarts.min.js"></script>
+<script src="http://gallery.echartsjs.com/dep/echarts/map/js/world.js"></script>
+<script src="http://gallery.echartsjs.com/dep/echarts/map/js/china.js"></script>
+<script src="./js/countUp.min.js"></script>
+<script src="./js/jq_scroll.js"></script>
+<!----------------------------------->
+<script src="js/echart-set.js"></script>
+<script src="./js/script.js"></script>
+</html>

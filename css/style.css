@@ -1,0 +1,401 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.main-wrap{
+  width: 1920px;
+  height: 1080px;
+  transform-origin: left top 0px;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden
+}
+
+.color-01 {
+  color: rgb(255, 238, 138);
+}
+
+.color-02 {
+  color: #FCE5C1;
+}
+
+.color-03 {
+  color: #fff;
+}
+
+.f20 {
+  font-size: 20px;
+}
+
+.f25 {
+  font-size: 25px;
+}
+
+.BMap_cpyCtrl,
+.anchorBL {
+  display: none;
+}
+
+body,
+html {
+  width: 1920px;
+  height: 1080px;
+  background: url('../images/bg.png') no-repeat center;
+  background-size: cover;
+  overflow: visible;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.map-chart-wrap {
+  position: absolute;
+  top: 0px;
+  width: 1920px;
+  height: 1080px;
+  z-index: 0;
+}
+
+.block-left-01 {
+  position: absolute;
+  left: 1264px;
+  top: 48px;
+  width: 624px;
+  height: 296px;
+  z-index: 5;
+  border-style: solid;
+  border-width: 32px 37px;
+  border-image-source: url(../images/bg1.png);
+  border-image-slice: 32 37 fill;
+  border-image-width: initial;
+  border-image-outset: initial;
+  border-image-repeat: initial;
+  background: none;
+}
+
+.block-left-title-wrap {
+  position: absolute;
+  top: -64px;
+  left: 50%;
+  margin-left: -176px;
+}
+
+.block-title {
+  width: 352px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(5, 56, 88, 0.6);
+  color: rgb(255, 238, 138);
+  font-size: 24px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.block-left-02 {
+  position: absolute;
+  left: 1264px;
+  top: 408px;
+  width: 624px;
+  height: 280px;
+  z-index: 5;
+  border-style: solid;
+  border-width: 32px 37px;
+  border-image-source: url(../images/bg1.png);
+  border-image-slice: 32 37 fill;
+  border-image-width: initial;
+  border-image-outset: initial;
+  border-image-repeat: initial;
+  background: none;
+}
+
+.block-left-03 {
+  position: absolute;
+  left: 1264px;
+  top: 752px;
+  width: 624px;
+  height: 288px;
+  z-index: 5;
+  border-style: solid;
+  border-width: 32px 37px;
+  border-image-source: url(../images/bg1.png);
+  border-image-slice: 32 37 fill;
+  border-image-width: initial;
+  border-image-outset: initial;
+  border-image-repeat: initial;
+  background: none;
+}
+
+.block-right-01 {
+  position: absolute;
+  left: 80px;
+  top: 184px;
+  z-index: 18;
+  margin: 0px !important;
+}
+
+.block-right-02 {
+  position: absolute;
+  left: 32px;
+  top: 792px;
+  width: 672px;
+  height: 248px;
+  z-index: 1;
+  border-style: solid;
+  border-width: 14px;
+  border-image-source: url(../images/bg2.png);
+  border-image-slice: 14;
+  border-image-width: initial;
+  border-image-outset: initial;
+  border-image-repeat: initial;
+  background: none;
+}
+
+.block-right-02 .cont {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(29, 22, 52, .5);
+}
+
+.block-right-title-wrap {
+  position: absolute;
+  top: -46px;
+  left: 20px;
+}
+
+.count-wrap {
+  display: flex;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  white-space: nowrap;
+  justify-content: flex-start;
+  margin: 22px 0;
+}
+
+.count-wrap span.num,
+.count-wrap span.prefix {
+  background-color: rgba(12, 218, 255, 0.8);
+  display: inline-block;
+  letter-spacing: 0.02em;
+  text-indent: 0.02em;
+  padding: 0 10px;
+  text-align: center;
+  height: 80px;
+  line-height: 82px;
+  font-size: 80.91740512052084px;
+  letter-spacing: 0.02em;
+  margin-right: 0.2em;
+}
+
+.count-wrap span.unit {
+  font-size: 42px;
+  color: #F8BC38;
+  vertical-align: super
+}
+
+.hot-sales {
+  float: left;
+  width: 50%;
+  height: 100%;
+  color: #fff;
+  line-height: 28px;
+  padding: 0 20px;
+  padding-top: 20px;
+  overflow: hidden;
+}
+
+.hot-sales-list li span {
+  float: left;
+}
+
+.hot-sales-list li span.ball {
+  width: 18px;
+  height: 18px;
+  line-height: 18px;
+  border-radius: 50%;
+  text-align: center;
+  background-color: #44D3E4;
+  margin-top: 5px;
+}
+
+.hot-sales-list li span.Amount {
+  float: right;
+  width: 65px;
+  text-align: center;
+}
+
+.hot-sales-list li span.title-cont {
+  width: 190px;
+  overflow: hidden;
+  padding-left: 10px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-align: center;
+}
+
+.hot-sales-title {
+  padding-left: 25px;
+}
+
+.hot-sales-title span {
+  float: left;
+}
+
+.hot-sales-title span:first-of-type {
+  width: 190px;
+  text-align: center;
+}
+
+.hot-sales-title span:last-of-type {
+  width: 65px;
+  text-align: center;
+}
+
+.for-month,
+.for-year,
+.for-user,
+.for-vip,
+.for-style,
+.for-chart,
+.for-list{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  color: #fff;
+}
+
+.for-month{
+  padding-top: 18px;
+  left: -15px;
+  width: 200px;
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+
+.for-year{
+  left: 190px;
+  width: 400px;
+  padding-top: 18px;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+.for-year p{
+  text-align: right;
+  padding-right: 20px;
+  margin-bottom: 13px;
+}
+
+.for-user{
+  left: -25px;
+  text-align: center;
+  padding-top: 20px;
+  font-size: 16px;
+  letter-spacing: 3px;
+}
+
+.for-vip{
+  left: 165px;
+}
+
+.for-style{
+  top: 30px;
+  left: 400px;
+  width: 170px;
+}
+
+.for-style p{
+  float: left;
+  width: 80px;
+  line-height: 50px;
+  text-align: center;
+  color: #fff;
+  background-color: #0099C1;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  border-radius: 3px;
+}
+
+.for-chart{
+  left: -10px;
+}
+
+.for-list{
+  width: 300px;
+  padding-top: 10px;
+  left: 295px;
+  line-height: 45px;
+  font-size: 16px;
+}
+
+.for-list span{
+  float: left;
+  margin-right: 20px;
+  text-align: center;
+}
+
+.for-list .ball{
+  width: 20px;
+  height: 20px;
+  margin-top: 12px;
+  line-height: 20px;
+  border-radius: 50%;
+  text-align: center;
+  background-color: #44D3E4;
+}
+
+.for-list span.s1{
+  width: 40px;
+}
+
+.for-list span.s2{
+  width: 85px;
+}
+
+.for-list span.s3{
+  width: 65px;
+}
+
+.for-list p{
+  padding-left: 42px;
+}
+
+.scrollDiv1,
+.scrollDiv2,
+.scrollDiv3{
+  height: 175px;
+  overflow: hidden;
+}
+
+.shape-loading{
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #0F2A42;
+  z-index: 100;
+}
+
+.shape-loading img{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -100px;
+  margin-top: -100px;
+  z-index: 101;
+}
